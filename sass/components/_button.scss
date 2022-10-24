@@ -1,0 +1,7 @@
+.button {
+    @extend %buttonStyle;
+
+    &:hover, &:focus {
+        background-color: $accent-color;
+    }
+}

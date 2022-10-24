@@ -1,1 +1,1 @@
-# Barbershop_adaptive
+# Barbershop

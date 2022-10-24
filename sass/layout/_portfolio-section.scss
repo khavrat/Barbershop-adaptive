@@ -1,0 +1,48 @@
+.section--portfolio {
+    @media screen and (max-width: $predesktop) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.portfolio__banner {
+    margin-bottom: 71px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;    
+    text-transform: uppercase;
+    color: $primary-title-color;
+
+    &::before {
+        @extend %decorStyle;
+        background-color: $primary-title-color;
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 44px;
+    }
+}
+
+.portfolio__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @media screen and (max-width: $pretablet) {
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: $tablet) {
+        flex-wrap: wrap;
+    }
+}

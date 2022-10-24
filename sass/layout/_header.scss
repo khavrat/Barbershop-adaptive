@@ -1,0 +1,88 @@
+.container--header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    width: 100%;
+    z-index: 100;
+}
+
+@media screen and (max-width: $pretablet) {
+    .site-nav,
+    .connection-nav {
+        display: none;
+    }
+}
+
+.menu-toggle {
+    @extend %togglStyle;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+@import "../components/logo";
+
+.site-nav__list {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 60px;
+        gap: 16px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 100px;
+        gap: 30px;
+    }
+}
+
+.site-nav__link {
+    @extend %navLinkStyle;
+
+    &:hover, &:focus {
+        color: $accent-color;
+    }
+}
+
+.connection-nav {
+    @media screen and (min-width: $tablet)  {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        margin-right: 20px;
+        margin-left: auto;
+        gap: 20px;
+        padding-top: 8px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        padding-top: 0;
+    }
+}
+
+.connection-nav__link {
+    @extend %navLinkStyle;
+    padding: 0;
+
+    @media screen and (min-width: $desktop) {
+        padding: 20px 0;
+    }
+
+    &:hover, &:focus {
+        color: $accent-color;
+    }
+}
+
+@import "../components/button";

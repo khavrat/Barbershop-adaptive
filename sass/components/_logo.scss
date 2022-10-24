@@ -1,0 +1,11 @@
+.logo {
+    fill: $basic-background-color;
+
+    @media screen and (min-width: $tablet) {
+        fill: $primary-title-color;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $predesktop) {
+        margin-left: 11px;
+    }
+}

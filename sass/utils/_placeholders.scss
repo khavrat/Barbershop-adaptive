@@ -1,0 +1,59 @@
+%navLinkStyle {
+    display: block;
+    text-decoration: none;
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: $basic-background-color;
+    transition: color 250ms linear;
+}
+
+%buttonStyle {
+    min-width: 160px;
+    height: 40px;
+    padding: 12px 20px;
+    border: 1px solid $accent-color;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: $basic-background-color;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 250ms linear;
+}
+
+%togglStyle {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+%decorStyle {
+    display: inline-block;
+    vertical-align: super;
+    content: " ";
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    background-color: rgba(157, 164, 189, 0.6);
+}
+
+%formInputStyle {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    color: $basic-background-color;
+    transition: border-bottom 250ms linear;
+    padding: 2px;
+}

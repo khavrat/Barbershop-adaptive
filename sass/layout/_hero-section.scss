@@ -1,0 +1,233 @@
+.section {
+    padding: 84px 0;
+
+    @media screen and (min-width: $tablet) {
+        padding: 100px 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 120px 0;
+    }
+}
+
+.section--hero {
+    padding: 0;
+
+    @media screen and (max-width: $pretablet) {
+        background-image: url(../images/heroimg3-480.jpg);
+        @include retina {
+            background-image: url(../images/heroimg3-480@2x.jpg);
+        }
+        background-color: $secondary-text-color;
+        background-size: cover;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.container--hero {
+    position: relative;
+    display: flex;
+    height: 580px;
+
+    @media screen and (min-width: $tablet) {
+        height: 680px;
+    }
+}
+
+.sidebar {
+    @media screen and (min-width: $tablet) {
+        width: 120px;
+        height: 680px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 100px;
+    }
+}
+
+.network__list {
+    @media screen and (max-width: $pretablet) {
+        display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        gap: 40px;
+    }
+
+    &--hero {
+        position: absolute;
+        top: 450px; 
+        left: -50px; 
+        transform: rotate(-90deg);
+
+        @media screen and (min-width: $desktop) {
+            left: -75px;
+        }
+    }
+}
+
+.network__link {
+    display: inline-block;
+    padding: 44px 0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: $primary-title-color;
+    transition: color 250ms linear;
+
+    &:hover, &:focus {
+        color: $accent-color;
+    }
+}
+
+.network__item--insta::before {
+    @extend %decorStyle;
+    vertical-align: middle;
+    margin-right: 40px;
+    background-color: $primary-title-color;
+}
+
+.hero__wrapper {
+    padding: 208px 0 209px;
+    flex-grow: 1;
+
+    @media screen and (min-width: $tablet) {
+        padding: 272px 0 237px 120px;
+        background-color: $primary-text-color;
+        background-image: url(../images/heroimg3-570.jpg);
+        @include retina {
+            background-image: url(../images/heroimg3-570@2x.jpg);
+        }
+        background-size: cover;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 272px 0 208px 100px;
+        background-image: url(../images/heroimg3-1070.jpg);
+        @include retina {
+            background-image: url(../images/heroimg3-1070@2x.jpg);
+        }
+    }
+}
+
+.hero__slogan {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;   
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+
+    &::before {
+        @extend %decorStyle;
+    }
+}
+
+.hero__title {
+    margin-bottom: 20px;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: $basic-background-color;
+
+    @media screen and (min-width: $mobile) {
+        font-size: 48px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 72px;
+        line-height: 1.18;
+    }
+}
+
+.hero__text {
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 18px;
+        line-height: 1.67;  
+    }
+}
+
+@media screen and (max-width: $pretablet) {
+    .menu__wrapper,
+    .slider {
+        display: none;
+    }
+}
+
+.menu__wrapper {
+    position: relative;
+}
+.menu {
+    position: absolute;
+    top: 325px;
+    right: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu__active {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    opacity: 0;
+    translate: opacity 250ms liner, 
+        transform 250ms liner;
+
+    &:hover, &:focus {
+        opacity: 1;
+        transform: scaleX(100%);
+    }
+}
+
+.slider {
+    position: relative;
+
+    &__wrapper {
+        display: inline-flex;
+        position: absolute;
+        bottom: 40px;
+        right: 4px;
+    }
+}
+
+.slider__control {
+    display: inline-flex;
+    align-items: flex-start;
+    margin-right: 24px;
+    width: 60px;
+    height: 24px;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.6);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;    
+    letter-spacing: 0.1em;
+    color: rgba(157, 164, 189, 0.6);
+    cursor: pointer;
+    transition: color 250ms liner,
+        border-bottom 250ms linear;
+
+    &:hover, &:focus {
+        color: $basic-background-color;
+        border-bottom: 1px solid $basic-background-color;
+    }
+
+    &--next {
+        justify-content: right;
+    }
+}

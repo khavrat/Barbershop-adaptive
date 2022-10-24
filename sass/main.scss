@@ -1,0 +1,20 @@
+@import "./utils/variables";
+@import "./utils/totalstyles";
+@import "./utils/breakpoints";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+@import "./components/container";
+
+@import "./layout/header";
+@import "./layout/hero-section";
+@import "./layout/about-section";
+@import "./layout/prices-section";
+@import "./layout/feature-section";
+@import "./layout/expert-section";
+@import "./layout/portfolio-section";
+@import "./layout/prefooter-section";
+@import "./layout/footer";
+
+@import "./components/menu";
+

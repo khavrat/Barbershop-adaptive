@@ -1,0 +1,39 @@
+.container--footer {
+    height: 138px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $mobile) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: $tablet) {
+        height: 127px;
+        align-items: center;
+    }
+}
+
+.copyright {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: $secondary-text-color;
+    padding: 44px 0;
+
+    @media screen and (max-width: $pretablet) {
+        align-self: flex-end;
+    }
+}
+
+.network__list--footer {
+    display: flex;
+    align-self: flex-start;
+    gap: 20px;
+
+    @media screen and (min-width: $mobile) {
+        gap: 40px;
+    }
+}

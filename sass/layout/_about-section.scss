@@ -1,0 +1,99 @@
+.about__list {
+    @media screen and (max-width: $pretablet) {
+        display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+    }
+}
+
+.about__wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.about__discription {
+    @media screen and (max-width: $pretablet) {
+        max-width: 418px;
+    }
+    
+    @media screen and (min-width: $tablet) and (max-width: $predesktop) {
+        width: 330px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 470px;
+    }
+}
+
+.about__tit {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;    
+    text-transform: uppercase;
+    color: var(--primary-title-color);
+    margin-bottom: 20px;
+
+    &::before {
+        @extend %decorStyle;
+        background-color: $primary-title-color;
+    }
+}
+
+.about__title {
+    font-family: 'Raleway';
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: $primary-title-color;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 42px;
+        line-height: 1.17;
+    }
+}
+
+.about__primarytext {
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.02em; 
+    color: $primary-text-color; 
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 18px;
+        line-height: 1.67;
+    }
+}
+
+.about__secondarytext {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 84px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 42px;
+    }
+}
+
+.button--font-color {
+    color: $primary-title-color;
+
+    &:hover, &:focus {
+        color: $basic-background-color;
+    }
+}
