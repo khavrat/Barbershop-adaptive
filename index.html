@@ -30,16 +30,16 @@
             <nav class="site-nav">
                 <ul class="site-nav__list">
                     <li class="site-nav__item">
-                        <a class="site-nav__link" href="#">About</a>
+                        <a class="site-nav__link" href="#about">About</a>
                     </li>
                     <li class="site-nav__item">
-                        <a class="site-nav__link" href="#">Services and prices</a>
+                        <a class="site-nav__link" href="#prices">Services and prices</a>
                     </li>
                     <li class="site-nav__item">
-                        <a class="site-nav__link" href="#">Barbers</a>
+                        <a class="site-nav__link" href="#barbers">Barbers</a>
                     </li>
                     <li class="site-nav__item">
-                        <a class="site-nav__link" href="">Contacts</a>
+                        <a class="site-nav__link" href="#contacts">Contacts</a>
                     </li>
                 </ul>
             </nav>
@@ -47,7 +47,7 @@
             <div class="connection-nav">
                 <a class="connection-nav__link" href="tel:+380441111111">+38 044 111 11 11</a>
                 <!--Button-->
-                <button class="button" type="button">online-booking</button>
+                <button class="button" type="button" onclick="toform()">online-booking</button>
             </div>
         </div>
     </header>        
@@ -89,7 +89,7 @@
             </div>
         </section>
         <!--About section-->
-        <section class="section">
+        <section class="section" id="about">
             <div class="container">
                 <div class="about__wrapper">
                     <ul class="about__list">
@@ -130,13 +130,13 @@
                                 when
                                 you fall into the hands of our master, you will never be the same again. We are a team that is always "on the
                                 same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
-                        <button class="button button--font-color" type="button">online-booking</button>
+                        <button class="button button--font-color" type="button" onclick="toform()">online-booking</button>
                     </div>
                 </div> 
             </div>               
         </section>
         <!--Services and prices section-->
-        <section class="section section--services">
+        <section class="section section--services" id="prices">
             <div class="overlay-servises">
                 <div class="container">
                     <p class="servises__banner">Spend your time with the best masters</p>
@@ -177,7 +177,7 @@
                             </li>
                         </ul>
                     </div>                  
-                    <button class="button button--servises" type="button">online-booking</button> 
+                    <button class="button button--servises" type="button" onclick="toform()">online-booking</button> 
                 </div>
             </div>
         </section>
@@ -224,7 +224,7 @@
             </div>
         </section>
         <!--Expert section-->
-        <section class="section section--expert">
+        <section class="section section--expert" id="barbers">
             <div class="container container--expert">
                 <p class="expert__banner">For true enjoyers of the atmosphere</p>
                 <h2 class="expert__title">Our barbers</h2>
@@ -465,7 +465,7 @@
             </div>
         </section>
         <!--Booking form and address (Prefooter section)-->
-        <section class="section section--prefooter">
+        <section class="section section--prefooter" id="booking">
             <div class="prefooter__overlay">
                 <div class="prefooter__wrapper">
                     <div class="container container--booking">
@@ -489,7 +489,7 @@
                         </form>
                     </div>
                     <!--Address-->
-                    <div class="contacts__overlay">
+                    <div class="contacts__overlay" id="contacts">
                         <div class="container container--contacts">
                             <div class="contacts__wrapper">
                                 <h2 class="contacts__title">Contacts</h2>
@@ -567,7 +567,7 @@
         </nav>
         <div class="connection-nav connection-nav--mobile-menu">
             <a class="connection-nav__link connection-nav__link--mobile-menu" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button class="button button--mobile-menu" type="button">online-booking</button>
+            <button class="button button--mobile-menu" type="button" onclick="toform()">online-booking</button>
         </div>
         <ul class="network__list network__list--mobile-menu">
             <li class="network__item network__item--insta">
@@ -579,11 +579,14 @@
         </ul>
     </div>
 
+    <script src="./js/anchors.js"></script>
+    <script src="./js/btn-booking.js"></script>
+
     <script defer
     src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
-    <script src="./js/mobile-menu.js"></script> -->
+    <script src="./js/mobile-menu.js"></script> 
 </body>
 </html>
 
