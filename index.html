@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -65,6 +66,49 @@
                         </li>
                     </ul>
                 </div>
+                <div class="slider__wrapper">
+                    <div class="slider">
+                        <div class="slider__item">
+                            <picture>
+                                <source
+                                srcset="./images/heroimg1-1070.jpg 1x,
+                                        ./images/heroimg1-1070@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <source
+                                srcset="./images/heroimg1-570.jpg 1x,
+                                        ./images/heroimg1-570@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <img src="./images/heroimg1-570.jpg" alt="shaver process photo">
+                            </picture>  
+                        </div>
+                        <div class="slider__item">
+                            <picture>
+                                <source
+                                srcset="./images/heroimg2-1070.jpg 1x,
+                                        ./images/heroimg2-1070@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <source
+                                srcset="./images/heroimg2-570.jpg 1x,
+                                        ./images/heroimg2-570@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <img src="./images/heroimg2-570.jpg" alt="shaver process photo">
+                            </picture>  
+                        </div>
+                        <div class="slider__item">
+                            <picture>
+                                <source
+                                srcset="./images/heroimg3-1070.jpg 1x,
+                                        ./images/heroimg3-1070@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <source
+                                srcset="./images/heroimg3-570.jpg 1x,
+                                        ./images/heroimg3-570@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <img src="./images/heroimg3-570.jpg" alt="shaver process photo">
+                            </picture>  
+                        </div>
+                    </div>
+                </div>
                 <div class="hero__wrapper">
                     <p class="hero__slogan">A hair salon for men in Kyiv</p>
                     <h1 class="hero__title">BarberShop</h1>
@@ -80,8 +124,8 @@
                         </svg>
                     </button>
                 </div>
-                <div class="slider">
-                    <div class="slider__wrapper">
+                <div>
+                    <div>
                         <button class="slider__control" type="button">Back</button>
                         <button class="slider__control slider__control--next" type="button">Forward</button>
                     </div>
@@ -579,14 +623,22 @@
         </ul>
     </div>
 
-    <script src="./js/anchors.js"></script>
-    <script src="./js/btn-booking.js"></script>
+
+
+    <script src="./js/anchors.js" type="module"></script>
+    <script src="./js/btn-booking.js" type="module"></script>
 
     <script defer
     src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-    <script src="./js/mobile-menu.js"></script> 
+    crossorigin="anonymous" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script> 
+
+    <!-- Slider scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" type="module"></script>
+    <script src="./js/slick.min.js" type="module"></script>
+    <script src="./js/slide.js" type="module"></script>
+
 </body>
 </html>
 

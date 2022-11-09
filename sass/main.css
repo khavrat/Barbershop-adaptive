@@ -917,10 +917,8 @@ img {
   fill: #303030;
   transition: fill 250ms linear;
 }
-
-.icon-network:hover,
-.icon-network:focus {
-  fill: accent-color;
+.icon-network:hover, .icon-network:focus, .icon-network:active {
+  fill: #FF6C00;
 }
 
 @media screen and (max-width: 1199px) {

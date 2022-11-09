@@ -87,9 +87,9 @@
     border-radius: 50%;
     fill: $primary-title-color;
     transition: fill 250ms linear;
+
+    &:hover, &:focus, &:active {
+        fill: $accent-color
+    }
 }
 
-.icon-network:hover,
-.icon-network:focus {
-    fill: accent-color;
-}
