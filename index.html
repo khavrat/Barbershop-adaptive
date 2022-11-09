@@ -71,6 +71,19 @@
                         <div class="slider__item">
                             <picture>
                                 <source
+                                srcset="./images/heroimg3-1070.jpg 1x,
+                                        ./images/heroimg3-1070@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <source
+                                srcset="./images/heroimg3-570.jpg 1x,
+                                        ./images/heroimg3-570@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <img src="./images/heroimg3-570.jpg" alt="shaver process photo">
+                            </picture>  
+                        </div>
+                        <div class="slider__item">
+                            <picture>
+                                <source
                                 srcset="./images/heroimg1-1070.jpg 1x,
                                         ./images/heroimg1-1070@2x.jpg 2x"
                                 media="(min-width: 1200px)">
@@ -92,19 +105,6 @@
                                         ./images/heroimg2-570@2x.jpg 2x"
                                 media="(min-width: 768px)">
                                 <img src="./images/heroimg2-570.jpg" alt="shaver process photo">
-                            </picture>  
-                        </div>
-                        <div class="slider__item">
-                            <picture>
-                                <source
-                                srcset="./images/heroimg3-1070.jpg 1x,
-                                        ./images/heroimg3-1070@2x.jpg 2x"
-                                media="(min-width: 1200px)">
-                                <source
-                                srcset="./images/heroimg3-570.jpg 1x,
-                                        ./images/heroimg3-570@2x.jpg 2x"
-                                media="(min-width: 768px)">
-                                <img src="./images/heroimg3-570.jpg" alt="shaver process photo">
                             </picture>  
                         </div>
                     </div>
@@ -626,7 +626,7 @@
 
 
     <script src="./js/anchors.js" type="module"></script>
-    <script src="./js/btn-booking.js" type="module"></script>
+    <script src="./js/btn-booking.js"></script>
 
     <script defer
     src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
